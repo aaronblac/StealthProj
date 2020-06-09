@@ -1,0 +1,179 @@
+body {
+  background-color: #ECF0F1;
+  margin: 0
+}
+
+header,
+.bottom {
+  padding: 10px 0 10px 0;
+  background-image: url("../images/dark-honeycomb.png");
+  color: #ECF0F1;
+  text-align: center;
+}
+
+.bottom {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2,
+p {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h2,
+p {
+  padding-top: 40px;
+  color: #151414;
+}
+
+.container {
+  padding-bottom: 60px;
+}
+
+.vid {
+  padding-top: 45px;
+  min-width: 350px;
+}
+
+.btn-group {
+  background-image: url("../images/dark-honeycomb.png");
+  color: #ECF0F1;
+}
+
+.buttons {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+video {
+  margin: auto;
+  background-color: #151414;
+  --width: 100%;
+  width: var(--width);
+  height: calc(var(--width) * .85);
+}
+
+/* MediaQuery */
+/* iphonex */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  h1, h2 {
+    font-size: 1.5rem !important;
+  }
+
+  p {
+    font-size: .8rem;
+  }
+
+  h2, p {
+    padding-top: 10px;
+    margin-bottom: 0 !important;
+  }
+}
+
+@media only screen and (min-device-height: 375px) and (min-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  h2 {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.5rem !important;
+  }
+
+  p {
+    font-size: .8rem;
+    margin-bottom: 0 !important;
+  }
+
+  header {
+    padding: 5px;
+  }
+
+  .vid, h1, p {
+    padding-top: 5px;
+  }
+}
+
+/* iphone 6,7,8 */
+@media only screen and (min-device-width: 375px) and (min-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  h1, h2 {
+    font-size: 1.5rem !important;
+  }
+
+  h2 {
+    display: none;
+  }
+
+  p {
+    padding-top: 10px;
+    font-size: .8rem;
+    margin-bottom: 0 !important;
+  }
+
+  .vid {
+    padding-top: 25px;
+  }
+
+  .bottom {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  h1 {
+    font-size: 1.5rem !important;
+  }
+
+  p {
+    font-size: .8rem;
+    padding-top: 10px;
+    margin-bottom: 0 !important;
+  }
+
+  h2 {
+    display: none;
+  }
+
+  .vid {
+    padding-top: 25px;
+  }
+}
+
+.bottom {
+  padding: 0;
+}
+
+/* iphone 6,7,8 + */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  h1 {
+    font-size: 1.5rem !important;
+  }
+
+  p {
+    font-size: .8rem;
+    padding-top: 10px;
+    margin-bottom: 0 !important;
+  }
+
+  h2 {
+    display: none;
+  }
+
+  .vid {
+    padding-top: 25px;
+  }
+
+  .bottom {
+    padding: 0;
+  }
+}

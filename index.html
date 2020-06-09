@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap&family=Open+Sans:wght@600&display=swap"" rel=" stylesheet">
+  <title>Video Recorder</title>
+</head>
+
+<header class="main-header">
+  <h1>Stealth Startup Project</h1>
+</header>
+
+<body>
+
+  <h2>Record Your Video Here</h2>
+  <p>Speak about who you are. Be You, Be Unique, Be Great!</p>
+  <div class="container">
+
+    <div class="row">
+
+      <div class="vid col-md-6 col-12">
+
+        <video id="rec" playsinline autoplay muted></video>
+
+        <div class="buttons">
+          <button type="button" class="btn-group" role="group" id="startCam">Camera On</button>
+          <button type="button" class="btn-group" role="group" id="record" disabled>Record</button>
+          <button type="button" class="btn-group" role="group" id="stop" disabled>Camera Off</button>
+        </div>
+
+      </div>
+
+      <div class="vid col-md-6 col-12">
+
+        <video id="playback" playsinline></video>
+
+        <div class="buttons">
+
+          <button type="button" class="btn-group" role="group" id="play" disabled>Play</button>
+          <button type="button" class="btn-group" role="group" id="download" disabled>Download</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="bottom">
+    Aaron Black Contribution
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+
+</body>
+
+</html>
